@@ -5,12 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Add your macOS-specific commands here
-                    sh 'docker --version'  // Check Docker version
-                    sh 'npm install'  // Your actual build steps using Docker
+                    // Replace '/usr/local/bin/docker' with the actual full path
+                    sh '/usr/local/bin/docker --version'
                 }
             }
         }
     }
 }
-
