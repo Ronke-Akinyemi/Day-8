@@ -3,9 +3,6 @@ pipeline {
 
     stages {
         stage('Build') {
-            agent {
-                label 'macOS'
-            }
             steps {
                 script {
                     // Add your macOS-specific commands here
@@ -16,3 +13,4 @@ pipeline {
         }
     }
 }
+
